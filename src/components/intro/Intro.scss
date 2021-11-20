@@ -1,0 +1,42 @@
+@import "styles/variables.scss";
+.intro-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  //   background-color: rgba(10, 10, 10, 0.3);
+  //   box-shadow: 1px 2px 7px #fff;
+
+  .name {
+    font-size: 3em;
+  }
+
+  .intro-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .bio {
+    p {
+      font-size: 20px;
+      margin: 0.5rem 0;
+      &:first-child {
+        span {
+          color: rgb(99, 130, 221);
+        }
+      }
+      &:last-child {
+        span {
+          color: red;
+        }
+      }
+    }
+  }
+}
