@@ -21,9 +21,12 @@
     border-radius: 50%;
     background-color: white;
     transition: transform 500ms ease;
+    box-shadow: 0px 2px 3px #e32b79;
     /* transition-delay: calc(0.08s * var(--i)); */
-    box-shadow: 0px 2px 8px #e32b79;
     cursor: pointer;
+    &:hover {
+      box-shadow: 0px 4px 13px #e32b79;
+    }
   }
 
   li {
@@ -51,11 +54,11 @@
       /* 8 = number of items */
 
       transform: rotate(calc(360deg / var(--length) * var(--i)));
-      box-shadow: 0px 4px 13px #e32b79;
+      // box-shadow: 0px 4px 13px #e32b79;
     }
     .toggle {
       transform: rotate(315deg);
-      box-shadow: 0px 4px 13px #e32b79;
+      // box-shadow: 0px 4px 13px #e32b79;
     }
   }
 }

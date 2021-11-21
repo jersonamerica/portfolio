@@ -1,0 +1,15 @@
+.card {
+  background-color: #fff;
+  display: flex;
+  box-shadow: 2px 4px 9px #fff;
+  flex-direction: column;
+  max-width: 600px;
+  flex: 1 1 32%;
+  min-width: 330px;
+  transition: transform 300ms ease;
+
+  &:hover {
+    box-shadow: 2px 4px 9px hotpink;
+    transform: translateY(-5px);
+  }
+}

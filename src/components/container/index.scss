@@ -4,8 +4,5 @@
   scroll-snap-type: y mandatory;
   height: 100vh;
   overflow-y: scroll;
-
-  &.loading {
-    overflow: hidden;
-  }
+  overflow-x: hidden;
 }
