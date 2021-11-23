@@ -5,4 +5,8 @@
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 0 2rem;
+    scroll-snap-type: none;
+  }
 }

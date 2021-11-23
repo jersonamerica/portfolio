@@ -1,0 +1,29 @@
+@import "styles/variables.scss";
+
+section.experiences-wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 3rem;
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  .workexp-row {
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: -2px -2px 2px $shadow;
+    padding: 1rem;
+
+    .position,
+    .company,
+    .date {
+      margin-bottom: 0.5rem;
+    }
+
+    .position {
+      font-size: 16px;
+    }
+  }
+}

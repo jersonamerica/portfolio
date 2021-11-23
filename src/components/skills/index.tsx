@@ -58,7 +58,14 @@ const Skills: NewType = ({ skillsRef }) => {
     {
       name: "Typescript",
       color: "#0073C0",
-      icon: LogoTumblr,
+      icon: () => (
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+          alt="Typescript"
+          width="60px"
+          height="60px"
+        />
+      ),
     },
   ];
 
@@ -70,7 +77,7 @@ const Skills: NewType = ({ skillsRef }) => {
     return () => {
       clearInterval(beatTimeout);
     };
-  }, [beat]);
+  }, [beat, skills.length]);
 
   return (
     <section ref={skillsRef}>

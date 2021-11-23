@@ -9,15 +9,13 @@ const Home = () => {
   const skillsRef = useRef<HTMLElement>(null);
 
   return (
-    <div className="contents">
-      <Container>
-        <LightSpeed>
-          <Intro />
-        </LightSpeed>
-        <Skills skillsRef={skillsRef} />
-        <WorkExperiences />
-      </Container>
-    </div>
+    <Container>
+      <LightSpeed>
+        <Intro />
+      </LightSpeed>
+      <Skills skillsRef={skillsRef} />
+      <WorkExperiences />
+    </Container>
   );
 };
 

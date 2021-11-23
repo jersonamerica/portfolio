@@ -20,3 +20,20 @@ export const getProjects = async () => {
 
   return result.projects;
 };
+
+export const getExperiences = async () => {
+  const query = gql`
+    query GetExperiences {
+      experiences(orderBy: jobDate_DESC) {
+        id
+        company
+        position
+        jobDate
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.experiences;
+};

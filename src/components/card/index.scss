@@ -1,3 +1,5 @@
+@import "styles/variables.scss";
+
 .card {
   background-color: #fff;
   display: flex;
@@ -9,7 +11,7 @@
   transition: transform 300ms ease;
 
   &:hover {
-    box-shadow: 2px 4px 9px hotpink;
+    box-shadow: 2px 4px 9px $shadow;
     transform: translateY(-5px);
   }
 }
