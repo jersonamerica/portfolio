@@ -5,8 +5,8 @@ import {
   AddOutline,
   MusicalNotesOutline,
   RocketOutline,
-  ConstructOutline,
   HomeOutline,
+  HeartCircleOutline,
 } from "react-ionicons";
 import "components/menu/index.scss";
 import { CSSProperties } from "react";
@@ -16,7 +16,6 @@ type Props = {
 };
 
 const Menu: FC<Props> = ({ skillsOnClick }) => {
-  //   console.log("refs: ", refs);
   const menus = [
     {
       icon: (
@@ -40,7 +39,11 @@ const Menu: FC<Props> = ({ skillsOnClick }) => {
       ),
     },
     {
-      icon: <ConstructOutline color="#e32b79" />,
+      icon: (
+        <Link to="/interests">
+          <HeartCircleOutline color="#e32b79" />
+        </Link>
+      ),
     },
     {
       icon: (
@@ -51,10 +54,11 @@ const Menu: FC<Props> = ({ skillsOnClick }) => {
       onClick: skillsOnClick,
     },
   ];
-  function handleMenu() {
+
+  const handleMenu = () => {
     const menu = document.querySelector(".menu");
     menu?.classList.toggle("active");
-  }
+  };
 
   return (
     <>
