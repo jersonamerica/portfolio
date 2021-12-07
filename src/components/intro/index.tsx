@@ -20,7 +20,7 @@ const Intro = ({ inputRef }: any) => {
       <div className="contact">
         <Link
           to={{
-            pathname: "https://facebook.com/dmg.jhers",
+            pathname: "https://facebook.com/dmg.jers",
           }}
           target="_blank"
           className="contact-link"

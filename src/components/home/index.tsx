@@ -3,6 +3,7 @@ import Container from "components/container";
 import Intro from "components/intro";
 import Skills from "components/skills";
 import WorkExperiences from "components/work";
+import Projects from "components/projects";
 import LightSpeed from "react-reveal/LightSpeed";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       </LightSpeed>
       <Skills skillsRef={skillsRef} />
       <WorkExperiences />
+      <Projects />
     </Container>
   );
 };

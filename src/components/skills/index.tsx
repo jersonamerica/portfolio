@@ -7,17 +7,14 @@ import {
   LogoJavascript,
   GitBranchOutline,
   LogoAngular,
-  LogoTumblr,
 } from "react-ionicons";
-import "components/skills/index.scss";
+import "components/skills/skills.scss";
 
 type Props = {
   skillsRef: LegacyRef<HTMLElement>;
 };
 
-type NewType = FC<Props>;
-
-const Skills: NewType = ({ skillsRef }) => {
+const Skills: FC<Props> = ({ skillsRef }) => {
   const [beat, setBeat] = useState<number>(0);
   const skills = [
     {

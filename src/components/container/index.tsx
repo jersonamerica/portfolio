@@ -1,5 +1,5 @@
 import { FC, ReactChild } from "react";
-import "components/container/index.scss";
+import "components/container/container.scss";
 
 type Props = {
   children: ReactChild | Array<ReactChild>;

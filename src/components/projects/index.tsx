@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getProjects } from "services";
 import Card from "components/card";
-import Container from "components/container";
-import "./index.scss";
+import "./projects.scss";
 
 interface Project {
   id: string;
@@ -21,35 +20,33 @@ const Projects = () => {
     getProjects().then((result) => setProjects(result));
   }, []);
   return (
-    <Container>
-      <div className="wrapper">
-        <h2>Projects</h2>
-        <div className="projects">
-          {projects?.map((project) => (
-            <Card key={project.id}>
-              <div className="card-content">
-                <Link
-                  to={{
-                    pathname: project.url,
-                  }}
-                  replace
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-link"
-                >
-                  <img
-                    src={project.image.url}
-                    alt={project.name}
-                    title={project.name}
-                  />
-                  <p className="project-name">{project.name}</p>
-                </Link>
-              </div>
-            </Card>
-          ))}
-        </div>
+    <section className="projects-wrapper">
+      <h1>Projects</h1>
+      <div className="projects">
+        {projects?.map((project) => (
+          <Card key={project.id}>
+            <div className="card-content">
+              <Link
+                to={{
+                  pathname: project.url,
+                }}
+                replace
+                target="_blank"
+                rel="noreferrer"
+                className="project-link"
+              >
+                <img
+                  src={project.image.url}
+                  alt={project.name}
+                  title={project.name}
+                />
+                <p className="project-name">{project.name}</p>
+              </Link>
+            </div>
+          </Card>
+        ))}
       </div>
-    </Container>
+    </section>
   );
 };
 

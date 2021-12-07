@@ -1,0 +1,19 @@
+@import "styles/variables.scss";
+
+.card {
+  background-color: #fff;
+  display: flex;
+  box-shadow: 2px 4px 9px $shadow;
+  flex-direction: column-reverse;
+  flex: 0 1 32%;
+  transition: transform 300ms ease;
+
+  &:hover {
+    box-shadow: 3px 5px 12px rgb(118, 221, 199);
+    transform: translateY(-5px);
+  }
+
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
+  }
+}

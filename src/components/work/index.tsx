@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getExperiences } from "services";
 import moment from "moment";
 
-import "./index.scss";
+import "./work.scss";
 
 interface Experiences {
   id: string;

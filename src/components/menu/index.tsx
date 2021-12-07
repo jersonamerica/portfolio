@@ -8,14 +8,10 @@ import {
   HomeOutline,
   HeartCircleOutline,
 } from "react-ionicons";
-import "components/menu/index.scss";
+import "components/menu/menu.scss";
 import { CSSProperties } from "react";
 
-type Props = {
-  skillsOnClick: any;
-};
-
-const Menu: FC<Props> = ({ skillsOnClick }) => {
+const Menu: FC = () => {
   const menus = [
     {
       icon: (
@@ -33,7 +29,7 @@ const Menu: FC<Props> = ({ skillsOnClick }) => {
     },
     {
       icon: (
-        <Link to="/projects">
+        <Link to="/playground">
           <RocketOutline color="#e32b79" />
         </Link>
       ),
@@ -51,7 +47,6 @@ const Menu: FC<Props> = ({ skillsOnClick }) => {
           <GameControllerOutline color="#e32b79" />
         </Link>
       ),
-      onClick: skillsOnClick,
     },
   ];
 
@@ -74,7 +69,6 @@ const Menu: FC<Props> = ({ skillsOnClick }) => {
           <li
             key={index}
             style={{ "--i": index } as CSSProperties}
-            onClick={item?.onClick}
             role="button"
           >
             {item.icon}

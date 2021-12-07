@@ -1,15 +1,19 @@
 @import "styles/variables.scss";
 
-.wrapper {
-  margin: 3rem 0;
+section.projects-wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem 0;
 
-  h2 {
-    margin-bottom: 2rem;
+  h1 {
+    margin-bottom: 3rem;
   }
+
   .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1em;
 
     .card-content {
       display: flex;
