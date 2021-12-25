@@ -1,0 +1,36 @@
+.playground {
+  h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(90deg, #afd735, rgb(155, 33, 80));
+    background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: title-animation 5s infinite alternate;
+  }
+
+  @keyframes title-animation {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        padding: 1rem;
+      }
+    }
+  }
+}
